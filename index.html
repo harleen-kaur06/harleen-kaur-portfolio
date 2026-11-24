@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Harleen Kaur — Ontario Certified Teacher. Teaching, learning and educational resources for students and educators.">
+  <meta name="description" content="Harleen Kaur — Ontario Certified Teacher. Teaching, tutoring, learning and educational resources for students, families and educators.">
   <meta name="theme-color" content="#102b3f">
   <title>Harleen Kaur | Educator & Learning Advocate</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +22,19 @@
     .contact{background:var(--navy);color:white;text-align:center}.contact .section-kicker{color:#a9d4c8}.contact .section-title{color:white}.contact p{color:#d4e3e0;max-width:650px;margin:0 auto}.contact .actions{justify-content:center}.footer{padding:22px 0;color:#819198;font-size:.8rem;text-align:center;border-top:1px solid #ffffff18;background:#0b2232}
     @media(max-width:800px){.navlinks{gap:12px}.navlinks a{font-size:.78rem}.hero-grid,.about-grid{grid-template-columns:1fr;gap:35px}.portrait-wrap{justify-self:center;width:220px}.portrait-note{left:-25px}.resource-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:560px){.wrap{width:min(100% - 30px,1120px)}.nav{align-items:flex-start;padding:15px 0;flex-direction:column}.navlinks{width:100%;overflow:auto;padding-bottom:3px}.hero{padding:58px 0}.hero-grid{gap:30px}.hero h1{font-size:2.75rem}.stats,.timeline,.resource-grid{grid-template-columns:1fr}.stats{gap:8px}section{padding:58px 0}}
+
+    .tutoring{background:white}.tutor-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:start;margin-top:30px}.tutor-steps{list-style:none;margin:0;padding:0;counter-reset:step}.tutor-steps li{counter-increment:step;position:relative;padding:4px 0 22px 58px}.tutor-steps li:before{content:counter(step);position:absolute;left:0;top:2px;width:40px;height:40px;border-radius:50%;background:var(--mint);color:var(--blue);display:grid;place-items:center;font-weight:700}.tutor-steps li:not(:last-child):after{content:"";position:absolute;left:19px;top:46px;bottom:2px;width:2px;background:var(--line)}.tutor-steps h3{margin:0 0 3px;color:var(--navy);font-size:1.05rem}.tutor-steps p{margin:0;color:var(--muted);font-size:.94rem}
+    .register-card{background:linear-gradient(135deg,#102b3f,#1e5268);color:white;padding:32px;border-radius:16px;box-shadow:0 18px 40px #102b3f22}.register-card .badge{display:inline-block;background:#ffffff1a;color:#b9ddd2;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 11px;border-radius:99px}.register-card h3{font:700 1.7rem/1.2 'Playfair Display',serif;margin:16px 0 10px}.register-card p{color:#d4e3e0;margin:0 0 20px;font-size:.96rem}.register-card .btn{width:100%}.register-card small{display:block;margin-top:14px;color:#a9c2c2;font-size:.78rem;line-height:1.5}
+    .yt-band{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:40px;padding:24px 28px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}.yt-info{display:flex;align-items:center;gap:18px}.yt-icon{flex:none;width:52px;height:52px;border-radius:13px;background:#c4302b;color:white;display:grid;place-items:center;font-size:1.2rem;padding-left:3px}.yt-band h3{margin:0 0 2px;color:var(--navy);font-size:1.1rem}.yt-band p{margin:0;color:var(--muted);font-size:.92rem}.btn-dark{background:var(--navy);color:white}.btn-dark:hover{background:var(--blue);transform:translateY(-2px)}
+    .progress-card{display:flex;gap:20px;align-items:flex-start;margin-top:28px;padding:24px 26px;background:white;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px}.progress-card .tag{display:inline-block;background:#f7efdc;color:#8a6a1f;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:99px}.progress-card h3{margin:10px 0 6px;color:var(--navy);font-size:1.15rem}.progress-card p{margin:0;color:var(--muted);font-size:.94rem}
+    @media(max-width:800px){.tutor-grid{grid-template-columns:1fr;gap:30px}.yt-band{flex-direction:column;align-items:flex-start}}
+    @media(max-width:560px){.register-card{padding:26px}.yt-band{padding:20px}.yt-band .btn{width:100%}.progress-card{padding:20px}}
   </style>
 </head>
 <body>
   <header class="topbar"><div class="wrap nav">
     <a class="brand" href="#home">HARLEEN <span>KAUR</span></a>
-    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#journey">Experience</a><a href="#students">For Students</a><a href="#educators">For Educators</a><a href="#contact">Connect</a></nav>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#journey">Experience</a><a href="#tutoring">Tutoring</a><a href="#students">For Students</a><a href="#educators">For Educators</a><a href="#contact">Connect</a></nav>
   </div></header>
   <main>
     <section class="hero" id="home"><div class="wrap hero-grid">
@@ -35,7 +42,7 @@
         <h1>Learning with purpose.<br><em>Growing together.</em></h1>
         <p class="hero-copy">Hello, I’m Harleen Kaur — an educator passionate about creating inclusive, engaging learning experiences where every student feels supported, challenged and capable of success.</p>
         <div class="hero-meta">Kitchener, Ontario · Elementary Education · Mathematics · Science · Inclusive Learning</div>
-        <div class="actions"><a class="btn btn-primary" href="#about">Explore my portfolio</a><a class="btn btn-outline" href="https://www.linkedin.com/in/harleen-kaur-b929042a4/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></div>
+        <div class="actions"><a class="btn btn-primary" href="#about">Explore my portfolio</a><a class="btn btn-outline" href="#tutoring">Tutoring &amp; coaching</a><a class="btn btn-outline" href="https://www.linkedin.com/in/harleen-kaur-b929042a4/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a></div>
       </div>
       <div class="portrait-wrap"><img class="portrait" src="assets/harleen-photo.jpg" alt="Portrait of Harleen Kaur" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="portrait" style="display:none;place-items:center;text-align:center;padding:25px;color:#31566a;font-weight:700">Add your photo<br><small style="font-weight:400">assets/harleen-photo.jpg</small></div><div class="portrait-note">Educator · Lifelong learner</div></div>
     </div></section>
@@ -57,6 +64,19 @@
         <article class="timeline-card"><div class="tag">Earlier career · India</div><h3>Science Educator & Tutor</h3><p>Ten years of teaching and tutoring experience, with a focus on Chemistry and Biology for secondary and senior secondary learners.</p></article>
       </div>
       <div class="stats"><div class="stat"><strong>M.Sc. Chemistry</strong><span>Subject specialization</span></div><div class="stat"><strong>B.Ed.</strong><span>Teacher education</span></div><div class="stat"><strong>OCT</strong><span>Ontario College of Teachers</span></div></div>
+      <div class="progress-card"><div><span class="tag">In progress</span><h3>Special Education (SERT) – Part 1</h3><p>I am currently pursuing Part 1 of the Special Education (SERT) Additional Qualification to deepen my skills in supporting students with diverse learning needs. Once completed, it will be added to my Ontario teaching qualifications.</p></div></div>
+    </div></section>
+
+    <section class="tutoring" id="tutoring"><div class="wrap"><div class="section-kicker">Tutoring &amp; Coaching</div><h2 class="section-title">Personalized learning support for your child.</h2><p class="lead">Beyond the classroom, I offer coaching that builds confidence, strengthens foundational skills and supports each learner’s pace and goals, with a focus on Mathematics and Science.</p>
+      <div class="tutor-grid">
+        <ol class="tutor-steps">
+          <li><h3>Visit the TutorConnect portal</h3><p>Learn more about coaching and open the registration page using the button provided.</p></li>
+          <li><h3>Register your child</h3><p>A parent or guardian completes the short registration, sharing your child’s grade and learning needs.</p></li>
+          <li><h3>Get started</h3><p>After registration, we connect to discuss your child’s goals and the best way to support them.</p></li>
+        </ol>
+        <aside class="register-card"><span class="badge">Now accepting students</span><h3>Register your child for coaching</h3><p>Interested in coaching? Parents and guardians can register their child through my TutorConnect portal.</p><a class="btn btn-primary" href="https://harleen-kaur06.github.io/tutorconnect/" target="_blank" rel="noopener">Register on TutorConnect ↗</a><small>Registration is completed by a parent or guardian.</small></aside>
+      </div>
+      <div class="yt-band"><div class="yt-info"><div class="yt-icon" aria-hidden="true">▶</div><div><h3>Watch on YouTube</h3><p>Visit my YouTube channel for learning videos and tutoring support.</p></div></div><a class="btn btn-dark" href="https://www.youtube.com/@harleenkaurtutor" target="_blank" rel="noopener">Visit my channel ↗</a></div>
     </div></section>
 
     <section id="students"><div class="wrap"><div class="section-kicker">Explore · Practise · Discover</div><h2 class="section-title">Learning resources for students & families</h2><p class="resource-intro">A selection of useful, engaging learning spaces for practising skills, exploring new ideas and building confidence. Families should review each site and its privacy settings before use.</p>
@@ -81,7 +101,7 @@
       </div>
     </div></section>
 
-    <section class="contact" id="contact"><div class="wrap"><div class="section-kicker">Let’s connect</div><h2 class="section-title">Learning is better together.</h2><p>Thank you for visiting my professional portfolio. I welcome opportunities to connect with fellow educators, share learning resources and collaborate in support of students.</p><div class="actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/harleen-kaur-b929042a4/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn btn-outline" href="#home">Back to top ↑</a></div></div></section>
+    <section class="contact" id="contact"><div class="wrap"><div class="section-kicker">Let’s connect</div><h2 class="section-title">Learning is better together.</h2><p>Thank you for visiting my professional portfolio. I welcome opportunities to connect with fellow educators, share learning resources and collaborate in support of students.</p><div class="actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/harleen-kaur-b929042a4/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn btn-outline" href="https://www.youtube.com/@harleenkaurtutor" target="_blank" rel="noopener">YouTube ↗</a><a class="btn btn-outline" href="#tutoring">Register for tutoring</a><a class="btn btn-outline" href="#home">Back to top ↑</a></div></div></section>
   </main>
   <footer class="footer"><div class="wrap">© <span id="year"></span> Harleen Kaur · Educator Portfolio · Built for learning and sharing</div></footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
