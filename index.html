@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{--navy:#102b3f;--blue:#1e5268;--teal:#4f9b91;--mint:#e8f3ef;--ink:#20313b;--muted:#62727b;--paper:#fbfcfa;--line:#e2e9e6;--gold:#d7b46a}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit} .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit} .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
     .topbar{position:sticky;top:0;z-index:10;background:rgba(251,252,250,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;min-height:70px;gap:20px}.brand{font-weight:700;color:var(--navy);letter-spacing:.02em;text-decoration:none}.brand span{color:var(--teal)}.navlinks{display:flex;gap:23px;align-items:center}.navlinks a{text-decoration:none;font-size:.9rem;color:#42545e}.navlinks a:hover{color:var(--teal)}
     .hero{background:radial-gradient(circle at 80% 20%,#24566a 0,transparent 32%),linear-gradient(120deg,#102b3f,#173d50 70%,#1e5268);color:white;padding:82px 0 76px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:70px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:700;color:#b9ddd2}.hero h1{font:700 clamp(2.6rem,6vw,4.6rem)/1.08 'Playfair Display',serif;margin:15px 0 18px}.hero h1 em{color:#a9d4c8;font-style:normal}.hero-copy{font-size:1.12rem;color:#e2eeeb;max-width:650px}.hero-meta{margin-top:22px;color:#c4d9d8;font-size:.92rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:7px;text-decoration:none;font-weight:700;font-size:.92rem;transition:.2s}.btn-primary{background:#b8ded1;color:#102b3f}.btn-primary:hover{background:white;transform:translateY(-2px)}.btn-outline{border:1px solid #9ab8ba;color:white}.btn-outline:hover{background:#ffffff15}
     .portrait-wrap{justify-self:end;position:relative;width:min(300px,100%)}.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:160px 160px 18px 18px;border:7px solid #ffffff20;background:#e5eeea;display:block}.portrait-note{position:absolute;bottom:18px;left:-34px;background:#fff;color:var(--navy);padding:12px 16px;border-radius:8px;box-shadow:0 12px 35px #061c2b44;font-size:.8rem;font-weight:700}
@@ -20,8 +20,6 @@
     .journey{background:#f0f5f2}.timeline{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}.timeline-card{background:white;border:1px solid var(--line);padding:24px;border-radius:12px}.timeline-card .tag{color:var(--teal);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.timeline-card h3{margin:8px 0;color:var(--navy);font-size:1.1rem}.timeline-card p{margin:0;color:var(--muted);font-size:.94rem}
     .resource-intro{max-width:720px;color:var(--muted)}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:30px}.resource-card{display:flex;flex-direction:column;min-height:205px;padding:23px;border:1px solid var(--line);border-radius:12px;background:white;text-decoration:none;transition:.2s}.resource-card:hover{transform:translateY(-4px);border-color:#a8c9be;box-shadow:0 12px 28px #102b3f0d}.resource-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:11px;background:var(--mint);color:var(--blue);font-size:1.2rem}.resource-card h3{color:var(--navy);font-size:1.05rem;margin:14px 0 5px}.resource-card p{color:var(--muted);font-size:.88rem;margin:0 0 14px;flex:1}.resource-card span:last-child{color:var(--teal);font-size:.83rem;font-weight:700}.subhead{margin:48px 0 0;color:var(--navy);font:700 1.65rem 'Playfair Display',serif}
     .contact{background:var(--navy);color:white;text-align:center}.contact .section-kicker{color:#a9d4c8}.contact .section-title{color:white}.contact p{color:#d4e3e0;max-width:650px;margin:0 auto}.contact .actions{justify-content:center}.footer{padding:22px 0;color:#819198;font-size:.8rem;text-align:center;border-top:1px solid #ffffff18;background:#0b2232}
-    @media(max-width:800px){.navlinks{gap:12px}.navlinks a{font-size:.78rem}.hero-grid,.about-grid{grid-template-columns:1fr;gap:35px}.portrait-wrap{justify-self:center;width:220px}.portrait-note{left:-25px}.resource-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.wrap{width:min(100% - 30px,1120px)}.nav{align-items:flex-start;padding:15px 0;flex-direction:column}.navlinks{width:100%;overflow:auto;padding-bottom:3px}.hero{padding:58px 0}.hero-grid{gap:30px}.hero h1{font-size:2.75rem}.stats,.timeline,.resource-grid{grid-template-columns:1fr}.stats{gap:8px}section{padding:58px 0}}
 
     .tutoring{background:white}.tutor-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:start;margin-top:30px}.tutor-steps{list-style:none;margin:0;padding:0;counter-reset:step}.tutor-steps li{counter-increment:step;position:relative;padding:4px 0 22px 58px}.tutor-steps li:before{content:counter(step);position:absolute;left:0;top:2px;width:40px;height:40px;border-radius:50%;background:var(--mint);color:var(--blue);display:grid;place-items:center;font-weight:700}.tutor-steps li:not(:last-child):after{content:"";position:absolute;left:19px;top:46px;bottom:2px;width:2px;background:var(--line)}.tutor-steps h3{margin:0 0 3px;color:var(--navy);font-size:1.05rem}.tutor-steps p{margin:0;color:var(--muted);font-size:.94rem}
     .register-card{background:linear-gradient(135deg,#102b3f,#1e5268);color:white;padding:32px;border-radius:16px;box-shadow:0 18px 40px #102b3f22}.register-card .badge{display:inline-block;background:#ffffff1a;color:#b9ddd2;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:5px 11px;border-radius:99px}.register-card h3{font:700 1.7rem/1.2 'Playfair Display',serif;margin:16px 0 10px}.register-card p{color:#d4e3e0;margin:0 0 20px;font-size:.96rem}.register-card .btn{width:100%}.register-card small{display:block;margin-top:14px;color:#a9c2c2;font-size:.78rem;line-height:1.5}
@@ -29,12 +27,52 @@
     .progress-card{display:flex;gap:20px;align-items:flex-start;margin-top:28px;padding:24px 26px;background:white;border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:12px}.progress-card .tag{display:inline-block;background:#f7efdc;color:#8a6a1f;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 11px;border-radius:99px}.progress-card h3{margin:10px 0 6px;color:var(--navy);font-size:1.15rem}.progress-card p{margin:0;color:var(--muted);font-size:.94rem}
     @media(max-width:800px){.tutor-grid{grid-template-columns:1fr;gap:30px}.yt-band{flex-direction:column;align-items:flex-start}}
     @media(max-width:560px){.register-card{padding:26px}.yt-band{padding:20px}.yt-band .btn{width:100%}.progress-card{padding:20px}}
+
+    /* ---------- Responsive: tablet & mobile ---------- */
+    html{-webkit-text-size-adjust:100%}img{max-width:100%}.navtoggle{display:none}
+    @media(max-width:1000px){.hero-grid{gap:44px}.hero{padding:70px 0 64px}section{padding:66px 0}}
+    @media(max-width:900px){
+      .nav{min-height:62px}
+      .navtoggle{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:46px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:white;cursor:pointer}
+      .navtoggle span{display:block;height:2px;background:var(--navy);border-radius:2px;transition:.2s}
+      .topbar.open .navtoggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+      .topbar.open .navtoggle span:nth-child(2){opacity:0}
+      .topbar.open .navtoggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+      .navlinks{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:4px 20px 14px;box-shadow:0 16px 24px #102b3f14}
+      .topbar.open .navlinks{display:flex}
+      .navlinks a{padding:15px 4px;font-size:1rem;border-bottom:1px solid var(--line)}
+      .navlinks a:last-child{border-bottom:0}
+    }
+    @media(max-width:800px){
+      .hero-grid,.about-grid{grid-template-columns:1fr;gap:36px}
+      .portrait-wrap{justify-self:center;width:250px}
+      .portrait-note{left:50%;right:auto;transform:translateX(-50%);bottom:-16px;white-space:nowrap}
+      .resource-grid{grid-template-columns:repeat(2,1fr)}
+      .resource-card{min-height:0}
+      .hero{padding:56px 0 66px}
+      section{padding:58px 0}
+      .btn{min-height:46px}
+    }
+    @media(max-width:560px){
+      .wrap{width:min(100% - 32px,1120px)}
+      .hero{padding:44px 0 58px}.hero h1{font-size:2.4rem;margin:12px 0 14px}.hero-copy{font-size:1.02rem}.hero-meta{font-size:.86rem}
+      .portrait-wrap{width:200px}
+      .actions{flex-direction:column;align-items:stretch}.actions .btn{width:100%}
+      .stats,.timeline,.resource-grid{grid-template-columns:1fr}.stats{gap:10px}
+      section{padding:50px 0}.section-title{font-size:1.9rem}.lead{font-size:1rem}
+      .principles{padding:22px}.timeline-card{padding:20px}.resource-card{padding:20px}
+      .progress-card{flex-direction:column;gap:10px}
+      .tutor-steps li{padding-left:52px}
+      .register-card h3{font-size:1.45rem}
+      .footer{padding:20px 0}
+    }
   </style>
 </head>
 <body>
   <header class="topbar"><div class="wrap nav">
     <a class="brand" href="#home">HARLEEN <span>KAUR</span></a>
-    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#journey">Experience</a><a href="#tutoring">Tutoring</a><a href="#students">For Students</a><a href="#educators">For Educators</a><a href="#contact">Connect</a></nav>
+    <button class="navtoggle" id="navtoggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#journey">Experience</a><a href="#tutoring">Tutoring</a><a href="#students">For Students</a><a href="#educators">For Educators</a><a href="#contact">Connect</a></nav>
   </div></header>
   <main>
     <section class="hero" id="home"><div class="wrap hero-grid">
@@ -104,6 +142,14 @@
     <section class="contact" id="contact"><div class="wrap"><div class="section-kicker">Let’s connect</div><h2 class="section-title">Learning is better together.</h2><p>Thank you for visiting my professional portfolio. I welcome opportunities to connect with fellow educators, share learning resources and collaborate in support of students.</p><div class="actions"><a class="btn btn-primary" href="https://www.linkedin.com/in/harleen-kaur-b929042a4/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn btn-outline" href="https://www.youtube.com/@harleenkaurtutor" target="_blank" rel="noopener">YouTube ↗</a><a class="btn btn-outline" href="#tutoring">Register for tutoring</a><a class="btn btn-outline" href="#home">Back to top ↑</a></div></div></section>
   </main>
   <footer class="footer"><div class="wrap">© <span id="year"></span> Harleen Kaur · Educator Portfolio · Built for learning and sharing</div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();
+  (function(){var bar=document.querySelector('.topbar'),btn=document.getElementById('navtoggle'),links=document.getElementById('navlinks');
+    function set(open){bar.classList.toggle('open',open);btn.setAttribute('aria-expanded',open);btn.setAttribute('aria-label',open?'Close menu':'Open menu');}
+    btn.addEventListener('click',function(){set(!bar.classList.contains('open'));});
+    links.addEventListener('click',function(e){if(e.target.tagName==='A')set(false);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false);});
+    window.addEventListener('resize',function(){if(window.innerWidth>900)set(false);});
+  })();
+  </script>
 </body>
 </html>
